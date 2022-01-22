@@ -4,4 +4,5 @@ runs:
   using: "composite"
   steps:
     - run: ${{ github.action_path }}/prisma.sh
+    - run: chmod +x ${{ github.action_path }}/prisma.sh
       shell: bash
