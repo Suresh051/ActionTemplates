@@ -3,6 +3,7 @@ description: 'scanning cloudformation templates.'
 runs:
   using: "composite"
   steps:
-    - run: ${{ github.action_path }}/prisma.sh
-    - run: chmod +x ${{ github.action_path }}/prisma.sh
+    - run: |
+         ${{ github.action_path }}/prisma.sh
+         chmod +x ${{ github.action_path }}/prisma.sh
       shell: bash
