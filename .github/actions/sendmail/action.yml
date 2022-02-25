@@ -3,6 +3,7 @@ description: 'sending email.'
 runs:
   using: "composite"
   steps:
+    - uses: actions/checkout@v2
     - uses: dawidd6/action-send-mail@v2
       with:
       # mail server settings
