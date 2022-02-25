@@ -10,6 +10,6 @@ runs:
     - uses: actions/checkout@v2
     - name: Publish grant tasks package
       run: |
-          chmod +x ${{ github.action_path }}/publishgranttaskspackage.sh ${{ inputs.env }}
-          ${{ github.action_path }}/publishgranttaskspackage.sh
+          chmod +x ${{ github.action_path }}/publishgranttaskspackage.sh 
+          ${{ github.action_path }}/publishgranttaskspackage.sh ${{ inputs.env }}
       shell: bash      
